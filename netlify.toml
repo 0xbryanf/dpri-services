@@ -1,12 +1,12 @@
 [build]
-  command: npm run netlify
-  commandOrigin: config
-  environment:
+  command = "npm run netlify"
+  commandOrigin = "config"
+  environment
     - JWT_SECRET
     - MONGODB_PASSWORD
     - MONGODB_PATH
     - MONGODB_USER
     - NODE_ENV
     - PORT
-  publish: /opt/build/repo/dist
-  publishOrigin: config
+  publish = "/opt/build/repo/dist"
+  publishOrigin = "config"
