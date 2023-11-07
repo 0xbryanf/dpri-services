@@ -1,6 +1,5 @@
 [build]
   command = "npm run netlify"
-  commandOrigin = "config"
   environment:
     NODE_ENV=development
     PORT=8000
@@ -9,4 +8,3 @@
     MONGODB_PASSWORD=bfactor041789
     JWT_SECRET=438724730b20c2dbca9bd40e67e496d9a5ee4d1cae3d7eda50ba1f3781734f42
   publish = "dist/"
-  publishOrigin = "config"
