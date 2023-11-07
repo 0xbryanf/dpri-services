@@ -9,5 +9,5 @@ validateEnv();
 const app = new App([
     new UserController(),
     new PhDrugRefController(),
-], Number(process.env.port));
+], Number(process.env.PORT));
 app.listen();
