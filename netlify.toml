@@ -1,5 +1,5 @@
 [build]
   command = "npm run netlify"
   commandOrigin = "config"
-  publish = "/dist"
+  publish = "dist"
   publishOrigin = "config"
