@@ -33,6 +33,19 @@ class UserController implements Controller {
             authenticateAccount,
             this.getUser
         );
+
+        this.router.get(
+            `${this.path}/test`,
+            this.testConnection
+        );
+    }
+
+    private testConnection = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
+        try {
+            res.status(200).send("Connection successful");
+        } catch (error: any) {
+            next(new HttpException(400, error.message));
+        }
     }
 
     private register = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
